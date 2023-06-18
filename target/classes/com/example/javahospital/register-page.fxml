@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="756.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javahospital.HelloController">
+    <children>
+        <Label alignment="CENTER" layoutX="446.0" layoutY="32.0" prefHeight="51.0" prefWidth="227.0" text="Register Page" textAlignment="CENTER">
+            <font>
+                <Font name="Montserrat Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="73.0" layoutY="264.0" text="First Name">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="firstNameField" layoutX="209.0" layoutY="255.0" prefHeight="43.0" prefWidth="712.0" />
+        <TextField fx:id="lastNameField" layoutX="209.0" layoutY="324.0" prefHeight="43.0" prefWidth="712.0" />
+        <Label layoutX="73.0" layoutY="333.0" text="Last Name">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="email" layoutX="209.0" layoutY="384.0" prefHeight="43.0" prefWidth="712.0" />
+        <Label layoutX="73.0" layoutY="394.0" text="Email">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="age" layoutX="209.0" layoutY="453.0" prefHeight="43.0" prefWidth="712.0" />
+        <Label layoutX="73.0" layoutY="462.0" text="Age">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phone" layoutX="209.0" layoutY="522.0" prefHeight="43.0" prefWidth="712.0" />
+        <Label layoutX="73.0" layoutY="531.0" text="Phone ">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="600.0" text="Gender">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="676.0" text="Role">
+            <font>
+                <Font name="Monospaced Regular" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="register" layoutX="594.0" layoutY="624.0" mnemonicParsing="false" onAction="#handleNewRegister" prefHeight="51.0" prefWidth="255.0" style="-fx-background-color: #2784ff;" text="Register" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Regular" size="33.0" />
+            </font>
+        </Button>
+      <RadioButton fx:id="male" layoutX="194.0" layoutY="602.0" mnemonicParsing="false" onAction="#getGender" prefHeight="27.0" prefWidth="89.0" text="Male">
+         <font>
+            <Font name="Poppins Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gendersGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="292.0" layoutY="602.0" mnemonicParsing="false" onAction="#getGender" prefHeight="27.0" prefWidth="109.0" text="Female" toggleGroup="$gendersGroup">
+         <font>
+            <Font name="Poppins Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="patient" layoutX="308.0" layoutY="675.0" mnemonicParsing="false" onAction="#getRole" prefHeight="27.0" prefWidth="127.0" text="Patient">
+         <toggleGroup>
+            <ToggleGroup fx:id="rolesGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="Poppins Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="doctor" layoutX="194.0" layoutY="675.0" mnemonicParsing="false" onAction="#getRole" prefHeight="27.0" prefWidth="97.0" text="Doctor" toggleGroup="$rolesGroup">
+         <font>
+            <Font name="Poppins Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="usernameField" layoutX="203.0" layoutY="127.0" prefHeight="43.0" prefWidth="712.0" />
+      <Label layoutX="67.0" layoutY="136.0" text="Username">
+         <font>
+            <Font name="Monospaced Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="199.0" text="Password">
+         <font>
+            <Font name="Monospaced Regular" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="203.0" layoutY="190.0" prefHeight="43.0" prefWidth="712.0" />
+    </children>
+</AnchorPane>

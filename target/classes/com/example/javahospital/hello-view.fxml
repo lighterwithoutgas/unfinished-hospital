@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javahospital.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="303.0" layoutY="43.0" prefHeight="70.0" prefWidth="224.0" text="ePatient" textAlignment="CENTER">
+         <font>
+            <Font name="Italic_IV50" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="doctorButton" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleDoctorButton" prefHeight="70.0" prefWidth="802.0" style="-fx-background-color: #ff7e62;" text="Doctor" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="patientButton" layoutX="13.0" layoutY="330.0" mnemonicParsing="false" onAction="#handlePatientButton" prefHeight="70.0" prefWidth="802.0" style="-fx-background-color: #2784ff;" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="313.0" layoutY="102.0" prefHeight="46.0" prefWidth="204.0" text="Welcome back! Choose one:" textFill="#c9c2c2">
+         <font>
+            <Font name="MT Extra" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="346.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="46.0" prefWidth="136.0" style="-fx-background-color: #F5F5DC;" text="Register" textFill="#2f1515">
+         <font>
+            <Font name="Montserrat Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="411.0" prefHeight="30.0" prefWidth="260.0" text="Don't have an account?" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
